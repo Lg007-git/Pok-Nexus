@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: "Roboto", sans-serif;
+   
+}
+body{
+    background-color:rgb(239, 228, 228);
+    background-image: url('../Designer.png');
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding-top:8rem;
+    display:flex;
+}
+
+.left-container{
+    flex-basis:50%;
+}
+
+.left-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(14rem ,0.5fr)); 
+    grid-gap:1.5rem;
+}
+.card{
+    width:15rem;
+    background-color: #9edef9;
+    border-radius:1rem;
+    box-shadow:0 5px 5px black;
+    padding:0 1.5rem;
+    display:flex;
+    align-items: center ;
+    justify-content:space-between;
+    box-sizing:border-box;
+}
+
+.card img{
+    padding:0.2rem;
+    margin:0.2rem;
+    height:3.5rem;
+}
+
+
+.right-container{
+    position: sticky;
+    background-image: url(../p2.png);
+    background-size: cover;
+    width:40rem;
+    height: 37rem;
+    text-align:center;
+    /* background-color: #9edef9; */
+    color:black;
+    /* position:relative; */
+    top:3rem;
+    right:4rem;
+    border-radius: 5%;
+    /* background-image: url('../p1.png'); */
+
+}
+.right-container img{
+    position: relative;
+    /* margin:2rem; */
+    height: 14em;
+
+}
+
+
+
+
+
+.right-container h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing:1px;
+    background: linear-gradient(to right, #0b0b0b, #711635, #240b51, #03111d, #0c525c, #0d0e0d, #828d0b, #4d330a, #5f1f0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.abilities{
+    width:30%;
+    margin-left: 30%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.abilities .group{
+    background-color: #b74555;
+    color:white;
+    margin:1%;
+    padding:0.5rem;
+    font-size:12px;
+    border-radius:8px;
+
+}
+
+.base-stat{
+    margin-top:2rem;
+}
+
+.btn-group{
+    display:flex;
+}
+
+.btn-group button{
+    outline:none;
+    border:none;
+    width:150px;
+    padding:0.3rem 0;
+    margin:1rem;
+    font-size:17px;
+    font-weight: bold;
+    color:white;
+    background-color:#b74555;
+    border-radius:8px;
+
+}
+
+.base-stat h3{
+    background: linear-gradient(to right, #b41512, #711635, #240b51, #0682e8, #06b7ce, #08a911, #828d0b, #4d330a, #5f1f0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 872px) {
+  .container {
+    flex-direction: column-reverse; /* So right-container comes on top */
+    width:90%;
+    margin:auto;
+    padding-top:8rem;
+    display:flex;
+}
+  
+  .right-container{
+    position: sticky;
+    background-image: url(../p2.png);
+    background-size: cover;
+    width:32.4rem;
+    height:38rem;
+    text-align:center;
+    /* background-color: #9edef9; */
+    color:black;
+    /* position:relative; */
+    /* top:3rem; */
+    right:4rem;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    
+    /* background-image: url('../p1.png'); */
+}
+
+.right-container img{
+    height: 11rem;
+}
+
+.left-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(12rem ,0.5fr)); 
+    grid-gap:1.5rem;
+    margin-right: -10rem;
+}
+}
